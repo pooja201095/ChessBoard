@@ -1,0 +1,46 @@
+li{
+  height: 50px;
+  width: 50px;
+  list-style-type: none;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+
+ul {
+  /* Height set to ul to remove the space below every row */
+  height: 50px; 
+  margin: 0px;
+  padding: 0px;
+}
+
+ul .black{
+  background-color: black;
+}
+
+ul .black:nth-child(odd){
+  background-color: white;
+}
+
+ul:nth-child(odd) .black{
+  background-color: white;
+}
+
+ul:nth-child(odd) .black:nth-child(odd){
+  background-color:black;
+}
+
+ul .red{
+  background-color: red;
+}
+
+ul .red:nth-child(odd){
+  background-color: yellow;
+}
+
+ul:nth-child(odd) .red{
+  background-color: yellow;
+}
+ul:nth-child(odd) .red:nth-child(odd){
+  background-color:red;
+}
